@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+
+/* Global default - black bg + white text */
+html, body, #root {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* or your preferred font */
+}
+
+/* Admin portal override */
+.admin-portal {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  min-height: 100vh;
+  padding: 2rem; /* optional spacing */
+}
+
+/* Make sure text inside admin portal inherits black color */
+.admin-portal * {
+  color: inherit !important;
+}
